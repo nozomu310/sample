@@ -26,11 +26,12 @@ body {
 	align-items: flex-start;
 	gap: 20px;
 	border: 2px solid #111;
+	
 }
 
 p {
-	gap: 15;
 	padding-top: 30px;
+	
 }
 
 .head {
@@ -40,6 +41,7 @@ p {
 
 .body {
 	writing-mode: vertical-rl;
+    flex:1 1 auto;
 }
 
 
