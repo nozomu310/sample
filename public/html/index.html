@@ -1,10 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>作品集</title>
+	<meta name="description" content="エンジニア佐藤のポートフォリオ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+	<header class="page-header">
+		<h1 class="align-center">作品集</h1>
+		<p class="sub">ポートフォリオ　佐藤希</p>
+	</header>
+
+	<section class="panel panel-toc">
+		<h2 class="head">目次</h2>
+		<nav class="menu">
+			<p><a class="link" href="#">壱　自己紹介</a></p>
+			<p><a class="link" href="#">弐　実績</a></p>
+			<p><a class="link" href="#">参　技術</a></p>
+			<p><a class="link" href="#">肆　お問い合わせ</a></p>
+		</nav>
+	</section>
+
+	<section class="panel panel-about">
+		<h2 class="head">壱　自己紹介</h2>
+		<div class="body">
+			<p>二〇二一年　三月　高等学校卒業</p>
+			<p>二〇二四年　七月　「基本情報技術者試験」取得</p>
+			<p>二〇二五年　十月　月電ソフトウェア株式会社　入社</p>
+		</div>
+	</section>
+
+	<section class="panel panel-works">
+		<h2 class="head">弐　実績</h2>
+		<div class="body">
+			<p>・<a href="#">ＵＲＬ</a>　社員情報CRUD-コンソールアプリ</p>
+			<p>　-ポイント</p>
+			<p>　　論理削除を実装した</p>
+			<p>・<a href="#">ＵＲＬ</a>　簡易銀行システム</p>
+			<p>　-ポイント</p>
+			<p>　　論理削除を実装した</p>
+			<p>・<a href="#">ＵＲＬ</a>　オンラインレジシステム</p>
+			<p>　-ポイント</p>
+			<p>　　論理削除を実装した</p>
+		</div>
+	</section>
+
+	<section class="panel panel-skills">
+		<h2 class="head">参　技術</h2>
+		<div class="body">
+			<p>・Ｊａｖａ</p>
+			<p>・ＨＴＭＬ・ＣＳＳ</p>
+			<p>・ＪａｖａＳｃｒｉｐｔ</p>
+			<p>・Ｏｒａｃｌｅ</p>
+			<p>・Ｓｐｒｉｎｇ　Ｂｏｏｔ</p>
+			<p>・ＴｏｒｔｏｉｓｅＧｉｔ</p>
+			<p>・Ｅｃｌｉｐｓｅ</p>
+		</div>
+	</section>
+
+	<section class="panel panel-contact">
+		<h2 class="head">肆　お問い合わせ</h2>
+		<form class="form" action="#" metod="post">
+			<div class="field">
+				名前：
+				<input type="text" required>
+			</div>
+
+			<div class="field">
+				メールアドレス：
+				<input type="email" required>
+			</div>
+
+			<div class="field">
+				お問い合わせ内容：
+				<textarea name="message" required></textarea>
+			</div>
+
+			<button class="btn" type="submit">送信</button>
+		</form>
+	</section>
 
 </body>
+
 </html>

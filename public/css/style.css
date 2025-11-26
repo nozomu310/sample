@@ -1,1 +1,104 @@
 @charset "UTF-8";
+
+html {
+	background-image: url(23189881_s.jpg);
+	background-size: cover;
+}
+
+body {
+	margin: 0;
+	font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", "MS Mincho", sans-serif;
+}
+
+.page-header {
+	margin: 0 auto 14px;
+	border: 2px solid #111;
+	text-align: center;
+}
+
+.panel {
+
+	margin: 0 auto 14px;
+	display: flex;
+
+	justify-content: flex-start;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	gap: 20px;
+	border: 2px solid #111;
+}
+
+p {
+	gap: 15;
+	padding-top: 30px;
+}
+
+.head {
+	padding-top: 10px;
+	writing-mode: vertical-rl;
+}
+
+.body {
+	writing-mode: vertical-rl;
+}
+
+
+.menu {
+	writing-mode: vertical-rl;
+	align-items: flex-start;
+}
+
+
+
+@media (min-width: 800px) {
+	body {
+		max-width: 1100px;
+		margin: 20px auto;
+
+		display: grid;
+		grid-template-columns: 1.0fr 1.35fr 1.0fr;
+		grid-template-areas:
+			"header header header"
+			"contact about toc"
+			"contact works works"
+			"contact skills skills";
+
+		gap: 14px;
+
+		justify-items: stretch;
+		align-items: stretch;
+	}
+
+	.page-header,
+	.panel {
+		margin: 0;
+		width: 100%;
+	}
+
+
+	.page-header {
+		grid-area: header;
+	}
+
+	.panel-toc {
+		grid-area: toc;
+	}
+
+	.panel-about {
+		grid-area: about;
+	}
+
+	.panel-works {
+		grid-area: works;
+	}
+
+	.panel-skills {
+		grid-area: skills;
+	}
+
+	.panel-contact {
+		grid-area: contact;
+	}
+
+
+}
