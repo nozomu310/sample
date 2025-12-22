@@ -1,106 +1,192 @@
 @charset "UTF-8";
 
-html {
-	background-image: url(23189881_s.jpg);
-	background-size: cover;
-}
 
 body {
 	margin: 0;
-	font-family: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", "MS Mincho", sans-serif;
+	font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-selif;
+	color: #111;
+	background: #fff;
 }
 
-.page-header {
-	margin: 0 auto 14px;
-	border: 2px solid #111;
-	text-align: center;
+a {
+	color: inherit;
 }
 
-.panel {
 
-	margin: 0 auto 14px;
+.header {
+	position: sticky;
+
+	top: 0;
+	background-color: #e6e6e6;
+	border-bottom: 1px solid #111;
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-	justify-content: flex-start;
-	flex-direction: row-reverse;
-	align-items: flex-start;
-	gap: 20px;
-	border: 2px solid #111;
-	
+	padding: 28px 0px;
+
+	z-index: 9999;
 }
 
-p {
-	padding-top: 30px;
-	
+.logo {
+	font-weight: 700;
+	position: absolute;
+	left: 1%;
 }
 
-.head {
-	padding-top: 10px;
-	writing-mode: vertical-rl;
+.nav {
+	position: absolute;
+	top: 18px;
+	right: 1%;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
 }
 
-.body {
-	writing-mode: vertical-rl;
-    flex:1 1 auto;
+.nav a {
+	text-decoration: none;
+	border: 1px solid #111;
+	border-radius: 999px;
+	font-size: 14px;
+	padding: 6px 5px;
 }
 
-
-.menu {
-	writing-mode: vertical-rl;
-	align-items: flex-start;
+.image {
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
 }
 
+.image-img {
+	width: 100%;
+	height: auto;
+	display: block;
 
+}
 
-@media (min-width: 800px) {
-	body {
-		max-width: 1100px;
-		margin: 20px auto;
+.image-text {
+	position: absolute;
+	left: 10%;
+	top: 15%;
+}
 
-		display: grid;
-		grid-template-columns: 1.0fr 1.35fr 1.0fr;
-		grid-template-areas:
-			"header header header"
-			"contact about toc"
-			"contact works works"
-			"contact skills skills";
+.name {
+	margin: 0;
+	color: white;
+	text-shadow:
+		-2px -2px 0 #000,
+		2px 2px 0 #000,
+		-2px -2px 0 #000,
+		2px 2px 0 #000;
+}
 
-		gap: 14px;
+.tagline {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.6);
+}
 
-		justify-items: stretch;
-		align-items: stretch;
-	}
+.container {
+	margin: 0 auto;
+	padding: 0 14px 40px;
+}
 
-	.page-header,
-	.panel {
-		margin: 0;
-		width: 100%;
-	}
+.section {
+	margin-top: 26px;
+	scroll-margin-top: 70px;
+}
 
+.title {
+	margin: 0 0 10px;
+	font-size: 18px;
+}
 
-	.page-header {
-		grid-area: header;
-	}
+.card {
+	border: 1px solid #e6e6e6;
+	border-radius: 14px;
+	padding: 14px;
+}
 
-	.panel-toc {
-		grid-area: toc;
-	}
+.profile-list {
+	margin: 0;
+}
 
-	.panel-about {
-		grid-area: about;
-	}
+.works-list {
+	margin: 0;
+	list-style: none;
+	display: grid;
+	gap: 12px;
+}
 
-	.panel-works {
-		grid-area: works;
-	}
+.works-item {
+	border: 1px solid #e6e6e6;
+	border-radius: 14px;
+	padding: 14px;
+}
 
-	.panel-skills {
-		grid-area: skills;
-	}
+.works-link {
+	text-decoration: none;
+}
 
-	.panel-contact {
-		grid-area: contact;
-	}
+.works-link :hover {
+	border-bottom-color: #111;
+}
 
+.skills-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
 
+.skill-item {
+	border: 1px solid #e6e6e6;
+	border-radius: 80px;
+	padding: 8px 10px;
+
+}
+
+.form {
+	display: grid;
+	gap: 12px;
+
+}
+
+.field {
+	display: grid;
+	gap: 6px;
+	justify-items: center;
+
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.span {
+	position: absolute;
+	top: -10px;
+	left: 12px;
+	padding: 0 6px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	background: #fff;
+}
+
+.input {
+	width: 100%;
+	padding: 20px 12px 10px;
+	border: 2px solid #e6e6e6;
+	border-radius: 6px;
+	font-size: 12px;
+}
+
+.btn {
+	width: 80%;
+	border: 1px solid #e6e6e6;
+	border-radius: 14px;
+	padding: 8px 10px;
+}
+
+textarea.input {
+	min-height: 160px;
 }

@@ -1,91 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 
 <head>
-	<meta charset="UTF-8">
-	<title>作品集</title>
-	<meta name="description" content="エンジニア佐藤のポートフォリオ">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/style.css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>ポートフォリオ</title>
+	<link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
-	<header class="page-header">
-		<h1 class="align-center">作品集</h1>
-		<p class="sub">ポートフォリオ　佐藤希</p>
+
+	<header class="header">
+		<div class="header-inner">
+			<div class="logo">Portfolio</div>
+
+			<nav class="nav">
+				<a href="#profile">自己紹介</a>
+				<a href="#works">実績</a>
+				<a href="#skills">技術</a>
+				<a href="#contact">問い合わせ</a>
+			</nav>
+		</div>
 	</header>
 
-	<section class="panel panel-toc">
-		<h2 class="head">目次</h2>
-		<nav class="menu">
-			<p><a class="link" href="#">壱　自己紹介</a></p>
-			<p><a class="link" href="#">弐　実績</a></p>
-			<p><a class="link" href="#">参　技術</a></p>
-			<p><a class="link" href="#">肆　お問い合わせ</a></p>
-		</nav>
-	</section>
-
-	<section class="panel panel-about">
-		<h2 class="head">壱　自己紹介</h2>
-		<div class="body">
-			<p>二〇二一年　三月　高等学校卒業</p>
-			<p>二〇二四年　七月　「基本情報技術者試験」取得</p>
-			<p>二〇二五年　十月　月電ソフトウェア株式会社　入社</p>
+	<section class="image">
+		<img class="image-img" src="../css/portfolio.png" alt="写真" />
+		<div class="image-text">
+			<h1 class="name">佐藤　希</h1>
+			<p class="tagline">Java/oracle/spring Bootを中心に開発しています</p>
 		</div>
 	</section>
 
-	<section class="panel panel-works">
-		<h2 class="head">弐　実績</h2>
-		<div class="body">
-			<p>・<a href="#">ＵＲＬ</a>　社員情報CRUD-コンソールアプリ</p>
-			<p>　-ポイント</p>
-			<p>　　論理削除の実装</p>
-			<p>・<a href="#">ＵＲＬ</a>　簡易銀行システム</p>
-			<p>　-ポイント</p>
-			<p>　　</p>
-			<p>・<a href="#">ＵＲＬ</a>　オンラインレジシステム</p>
-			<p>　-ポイント</p>
-			<p>　　</p>
-			<p>・<a href="https://github.com/nozomu310/daily-java.git">ＵＲＬ</a>　練習問題・演習問題</p>
-			<p>　-ポイント</p>
-			<p>　　</p>
-		</div>
-	</section>
+	<main class="container">
 
-	<section class="panel panel-skills">
-		<h2 class="head">参　技術</h2>
-		<div class="body">
-			<p>・Ｊａｖａ</p>
-			<p>・ＨＴＭＬ・ＣＳＳ</p>
-			<p>・ＪａｖａＳｃｒｉｐｔ</p>
-			<p>・Ｏｒａｃｌｅ</p>
-			<p>・Ｓｐｒｉｎｇ　Ｂｏｏｔ</p>
-			<p>・ＴｏｒｔｏｉｓｅＧｉｔ</p>
-			<p>・Ｅｃｌｉｐｓｅ</p>
-		</div>
-	</section>
+		<section class="section" id="profile">
+			<h2 class="title">自己紹介</h2>
 
-	<section class="panel panel-contact">
-		<h2 class="head">肆　お問い合わせ</h2>
-		<form class="form" action="#" metod="post">
-			<div class="field">
-				名前：
-				<input type="text" required>
+			<div class="card">
+				<ul class="profile-list">
+					<li>2021年　1月　高等学校　卒業</li>
+					<li>2024年　7月　「基本情報技術者試験」　合格</li>
+					<li>2025年　10月　月電ソフトウェア株式会社　入社</li>
+				</ul>
 			</div>
+		</section>
 
-			<div class="field">
-				メールアドレス：
-				<input type="email" required>
+		<section class="section" id="works">
+			<h2 class="title">実績</h2>
+
+			<div class="card">
+				<ul class="works-list">
+					<li class="works-item">
+						<a class="works-link" href="https://github.com/nozomu310/rt2-spring-app">
+							<div class="works-title">社員情報CRUD WEBアプリ</div>
+							<div class="works-point">ポイント：</div>
+							<div class="works-point">・論理削除の実装</div>
+							<div class="works-point">・パスワード表示切り替え</div>
+							<div class="works-point">・エラー文を揺らす</div>
+							<div class="works-point">・エラーになった時に赤枠にする</div>
+						</a>
+					</li>
+					<li class="works-item">
+						<a class="works-link" href="https://github.com/nozomu310/daily-java">
+							<div class="works-title">簡易銀行コンソールアプリ</div>
+							<div class="works-point">ポイント：</div>
+							<div class="works-point">・口座管理</div>
+							<div class="works-point">・入金と出金</div>
+							<div class="works-point">・振込</div>
+						</a>
+					</li>
+					<li class="works-item">
+						<a class="works-link" href="https://github.com/nozomu310/daily-java">
+							<div class="works-title">簡易ECコンソールアプリ</div>
+							<div class="works-point">ポイント：</div>
+							<div class="works-point">・入力チェック・例外処理の実装</div>
+							<div class="works-point">・番号or名前で商品を特定</div>
+						</a>
+					</li>
+					<li class="works-item">
+						<a class="works-link" href="https://github.com/nozomu310/daily-java">
+							<div class="works-title">練習問題</div>
+							<div class="works-point">ポイント：</div>
+							<div class="works-point">・大きなずれなくに進められた</div>
+						</a>
+					</li>
+				</ul>
 			</div>
+		</section>
 
-			<div class="field">
-				お問い合わせ内容：
-				<textarea name="message" required></textarea>
+		<section class="section" id="skills">
+			<h2 class="title">技術</h2>
+
+			<div class="card">
+				<div class="skills-list">
+					<span class="skill-item">Java</span>
+					<span class="skill-item">HTML・CSS</span>
+					<span class="skill-item">JavaScript</span>
+					<span class="skill-item">Oracle</span>
+					<span class="skill-item">Spring Boot</span>
+					<span class="skill-item">TortoiseGit</span>
+					<span class="skill-item">Eclipse</span>
+				</div>
 			</div>
+		</section>
 
-			<button class="btn" type="submit">送信</button>
-		</form>
-	</section>
+
+		<section class="section" id="contact">
+			<h2 class="title">お問い合わせ</h2>
+
+			<div class="card">
+				<form class="form" action="" method="post">
+					<div class="field">
+						<input class="input" type="text" name="name" required placeholder="" />
+						<label class="span">名前</label>
+					</div>
+
+					<div class="field">
+						<input class="input" type="email" name="name" required placeholder="" />
+						<label class="span">メールアドレス</label>
+					</div>
+
+					<div class="field">
+						<textarea class="input" type="message" name="name" required placeholder=""></textarea>
+						<label class="span">お問い合わせ内容</label>
+					</div>
+
+					<div class="field">
+						<button class="btn" type="submit">送信</button>
+					</div>
+
+
+
+				</form>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<small>©N.S Portforio</small>
+		</footer>
+	</main>
 
 </body>
 
